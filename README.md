@@ -29,8 +29,10 @@ Instead of breaking down the large "research articles" cluster into sub-topics, 
 <img width="546" height="384" alt="image" src="https://github.com/user-attachments/assets/76174f9d-e17d-4c7d-bad6-36f5cedd1ff8" />
 
 **Solution**
+
 After attempts to change the BERTopic parameters did not bring success, it was decided to apply BERTopic a second time. This time, only to those articles that were assigned to topic 0 (meaning directly to research articles).
 As a result, topics were extracted, and changing the HDBSCAN parameters during the second use of BERTopic indeed allowed identifying different clusters.
+
 ## Examples of Extracted Topics
 After BERTopic extracted the topics, 10 keywords associated with the topic were printed.
 Settings for smaller clusters allowed extracting 94 topics, many of which were of interest (for example, articles on quantum mechanics). But such topics were too narrow for analysis.
@@ -41,7 +43,9 @@ Therefore, improved HDBSCAN parameters were found, allowing for the distinction 
 
 <img width="585" height="442" alt="image" src="https://github.com/user-attachments/assets/d4400487-a1d0-417f-b013-00143ee5e4f4" />
 
-**Translation of the first 5 worlds of topic 1:**
+
+**Translation of the first keywords for the topics below.**
+
 **Topic 1** (Articles: 181):
   - 'proposition' (0.0193) 
   - 'reference' (0.0179)
@@ -55,6 +59,7 @@ Topic frequency:
 
 <img width="685" height="331" alt="image" src="https://github.com/user-attachments/assets/b9c33498-033c-4385-bf96-eef6678af344" />
 
+
 **Topic 2** (Articles: 78):
   - 'zone' (0.0269)
   - 'trade zone' (0.0254)
@@ -66,6 +71,7 @@ This topic is associated with the **trading zones** (the concept of Peter Galiso
 
 <img width="591" height="290" alt="image" src="https://github.com/user-attachments/assets/6696f548-3cd2-40c6-844a-b2c49fe497a1" />
 
+
 **Topic 3** (Articles: 56):
   - 'phenomenal' (0.0434)
   - 'qualia' (0.0351)
@@ -76,6 +82,7 @@ This topic is associated with the **trading zones** (the concept of Peter Galiso
 This topic is associated with the **philosophy of mind**. Its frequency:
 
 <img width="606" height="300" alt="image" src="https://github.com/user-attachments/assets/4cd233be-17b4-49c5-9dcd-3edaa50b4116" />
+
 
 **Topic 5** (Articles:  53):
   - 'circle' (0.0527)
@@ -91,6 +98,8 @@ This topic is associated with **logical positivism (and Wittgenstein)**. Its fre
 <img width="619" height="178" alt="image" src="https://github.com/user-attachments/assets/e0516dc3-f64f-4de4-ac69-383f7641729a" />
 
 (Keywords for the peak are translated)
+
+
 ## Main Findings
 1. Topics that are weakly related to the journal's theme mostly receive attention only when thematic issues are written (as in the case of religion), or when there are peaks of interest in them (as in the case of economics and politics).
 2. The popularity of some topics that are directly related to the journal may increase or decrease over time. For example, the philosophy of language and the closely related philosophy of logic are gradually losing popularity, although they are still an important topic for the journal, while "trading zones", on the contrary, are becoming more popular.
