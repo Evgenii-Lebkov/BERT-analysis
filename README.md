@@ -30,9 +30,13 @@ As a result, topics were extracted, and changing the HDBSCAN parameters during t
 ## Examples of Extracted Topics
 After BERTopic extracted the topics, 10 keywords associated with the topic were printed.
 Settings for smaller clusters allowed extracting 94 topics, many of which were of interest (for example, articles on quantum mechanics). But such topics were too narrow for analysis.
+
 <img width="558" height="406" alt="image" src="https://github.com/user-attachments/assets/5045ac47-4ffd-47f1-8b6c-b33047063eec" />
+
 Therefore, improved HDBSCAN parameters were found, allowing for the distinction of 22 clusters.
+
 <img width="585" height="442" alt="image" src="https://github.com/user-attachments/assets/d4400487-a1d0-417f-b013-00143ee5e4f4" />
+
 **Translation of the first 5 worlds of topic 1:**
 **Topic 1** (Articles: 181):
   - 'proposition' (0.0193) 
@@ -42,7 +46,9 @@ Therefore, improved HDBSCAN parameters were found, allowing for the distinction 
   - 'Kripke' (0.0149)
 This topic is associated with the **philosophy of science**.
 Topic frequency:
+
 <img width="685" height="331" alt="image" src="https://github.com/user-attachments/assets/b9c33498-033c-4385-bf96-eef6678af344" />
+
 **Topic 2** (Articles: 78):
   - 'zone' (0.0269)
   - 'trade zone' (0.0254)
@@ -50,7 +56,9 @@ Topic frequency:
   - 'technosciences' (0.0185)
   - 'expertise' (0.0157)
 This topic is associated with the **trading zones** (the concept of Peter Galison). Its frequency:
+
 <img width="836" height="410" alt="image" src="https://github.com/user-attachments/assets/f93ceb3d-a0cf-4ff6-bdab-0af040850053" />
+
 **Topic 3** (Articles: 56):
   - 'phenomenal' (0.0434)
   - 'qualia' (0.0351)
@@ -58,7 +66,9 @@ This topic is associated with the **trading zones** (the concept of Peter Galiso
   - 'phenomenal quality' (0.0158)
   - 'color' (0.0154)
 This topic is associated with the **philosophy of mind**. Its frequency:
+
 <img width="606" height="300" alt="image" src="https://github.com/user-attachments/assets/4cd233be-17b4-49c5-9dcd-3edaa50b4116" />
+
 **Topic 5** (Articles:  53):
   - 'circle' (0.0527)
   - 'Vienna' (0.0512)
@@ -68,7 +78,9 @@ This topic is associated with the **philosophy of mind**. Its frequency:
   - 'rule-following' (0.0242)
   - 'logical positivism' (0.0212)
 This topic is associated with **logical positivism (and Wittgenstein)**. Its frequency:
+
 <img width="619" height="178" alt="image" src="https://github.com/user-attachments/assets/e0516dc3-f64f-4de4-ac69-383f7641729a" />
+
 (Keywords for the peak are translated)
 ## Main Findings
 1. Topics that are weakly related to the journal's theme mostly receive attention only when thematic issues are written (as in the case of religion), or when there are peaks of interest in them (as in the case of economics and politics).
