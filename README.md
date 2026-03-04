@@ -21,9 +21,13 @@ The primary method for isolating topics was tuning the parameters of the HDBSCAN
 Initially, BERTopic did not produce adequate clustering regardless of the HDBSCAN parameters. As it turned out, the data contained two very distinct clusters:
 1.	Articles directly related to the philosophy of science.
 2.	"Meta-articles" about the journal itself (anniversaries, obituaries, etc.).
+
 Instead of breaking down the large "research articles" cluster into sub-topics, the model tended to split the smaller cluster (e.g., separating anniversaries from obituaries).
+
 **Topic maps at that stage:**
+
 <img width="546" height="384" alt="image" src="https://github.com/user-attachments/assets/76174f9d-e17d-4c7d-bad6-36f5cedd1ff8" />
+
 **Solution**
 After attempts to change the BERTopic parameters did not bring success, it was decided to apply BERTopic a second time. This time, only to those articles that were assigned to topic 0 (meaning directly to research articles).
 As a result, topics were extracted, and changing the HDBSCAN parameters during the second use of BERTopic indeed allowed identifying different clusters.
@@ -44,7 +48,9 @@ Therefore, improved HDBSCAN parameters were found, allowing for the distinction 
   - 'predicate' (0.0157)
   - 'description' (0.0152) 
   - 'Kripke' (0.0149)
+
 This topic is associated with the **philosophy of science**.
+
 Topic frequency:
 
 <img width="685" height="331" alt="image" src="https://github.com/user-attachments/assets/b9c33498-033c-4385-bf96-eef6678af344" />
@@ -55,9 +61,10 @@ Topic frequency:
   - 'technological' (0.0222)
   - 'technosciences' (0.0185)
   - 'expertise' (0.0157)
+
 This topic is associated with the **trading zones** (the concept of Peter Galison). Its frequency:
 
-<img width="836" height="410" alt="image" src="https://github.com/user-attachments/assets/f93ceb3d-a0cf-4ff6-bdab-0af040850053" />
+<img width="591" height="290" alt="image" src="https://github.com/user-attachments/assets/6696f548-3cd2-40c6-844a-b2c49fe497a1" />
 
 **Topic 3** (Articles: 56):
   - 'phenomenal' (0.0434)
@@ -65,6 +72,7 @@ This topic is associated with the **trading zones** (the concept of Peter Galiso
   - 'gesture' (0.0203)
   - 'phenomenal quality' (0.0158)
   - 'color' (0.0154)
+
 This topic is associated with the **philosophy of mind**. Its frequency:
 
 <img width="606" height="300" alt="image" src="https://github.com/user-attachments/assets/4cd233be-17b4-49c5-9dcd-3edaa50b4116" />
@@ -77,6 +85,7 @@ This topic is associated with the **philosophy of mind**. Its frequency:
   - 'Humboldt' (0.0334) 
   - 'rule-following' (0.0242)
   - 'logical positivism' (0.0212)
+
 This topic is associated with **logical positivism (and Wittgenstein)**. Its frequency:
 
 <img width="619" height="178" alt="image" src="https://github.com/user-attachments/assets/e0516dc3-f64f-4de4-ac69-383f7641729a" />
