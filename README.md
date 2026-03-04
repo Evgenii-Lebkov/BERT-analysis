@@ -57,7 +57,8 @@ This topic is associated with the **philosophy of science**.
 
 Topic frequency:
 
-<img width="685" height="331" alt="image" src="https://github.com/user-attachments/assets/b9c33498-033c-4385-bf96-eef6678af344" />
+<img width="614" height="297" alt="image" src="https://github.com/user-attachments/assets/ec3e70f2-51e5-4f39-8414-53747e85047d" />
+
 
 
 **Topic 2** (Articles: 78):
