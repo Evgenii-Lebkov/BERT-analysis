@@ -58,7 +58,9 @@ This topic is associated with the **philosophy of science**.
 Topic frequency:
 
 <img width="685" height="331" alt="image" src="https://github.com/user-attachments/assets/b9c33498-033c-4385-bf96-eef6678af344" />
+
 <br>
+
 **Topic 2** (Articles: 78):
   - 'zone' (0.0269)
   - 'trade zone' (0.0254)
